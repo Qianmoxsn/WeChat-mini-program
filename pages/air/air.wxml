@@ -5,7 +5,7 @@
     <text class="title">空调-详细设置</text>
   </view>
   <view class="icon-container">
-    <image class="icon" src="/images/icon/home.png"></image>
+    <image class="icon" src="/images/instrument/空调.svg"></image>
     <view class="switch-container">
       <button class="switch-btn on">开启手动模式</button>
       <button class="switch-btn ai">开启AI模式</button>

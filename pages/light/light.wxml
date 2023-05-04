@@ -7,7 +7,7 @@
     <text class="title">卧室灯-详细设置</text>
   </view>
   <view class="content">
-    <image class="icon" src="/images/icon/home.png"></image>
+    <image class="icon" src="/images/instrument/灯.svg"></image>
     <view class="switches">
       <button class="switch" bindtap="turnOn">开启</button>
       <button class="switch" bindtap="turnOff">关闭</button>

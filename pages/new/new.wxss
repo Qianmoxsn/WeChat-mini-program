@@ -24,13 +24,20 @@
 }
 
 .button {
-  width: 45%;
-  height: 80rpx;
   background-color: #00a4ff;
   color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 200rpx;
+  height: 80rpx;
+  margin: 0 20rpx;
+  border-radius: 40rpx;
+  border: 2rpx solid #666;
   font-size: 28rpx;
-  border-radius: 10rpx;
-  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .select-wrapper {
