@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/new/new"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Web创新实践",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/images/icon/home.png",
+      "selectedIconPath": "images/icon/home-r.png"
+    },{
+      "pagePath": "pages/new/new",
+      "text": "场景预览",
+      "iconPath": "/images/icon/liststyle.png",
+      "selectedIconPath": "images/icon/liststyle-r.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,28 @@
+<!--pages/new/new.wxml-->
+<!-- scene-preview.wxml -->
+<view class="container">
+  <!-- 标题 -->
+  <view class="title">当前房间设置</view>
+
+  <!-- 两个按钮 -->
+  <view class="button-group">
+    <button class="button" bindtap="onPowerOffTap">一键断电</button>
+    <button class="button" bindtap="onPowerOffTap">xx模式</button>
+  </view>
+
+  <!-- 选择框 -->
+  <view class="select-wrapper">
+  <picker mode="selector" range="{{ ['卧室', '厨房', '厕所', '书房'] }}" bindchange="onSelectChange">
+    <view class="select">请选择房间
+      {{ selected }}
+      <image class="arrow" src="/images/icon/home.png"></image>
+    </view>
+  </picker>
+</view>
+
+  <!-- 实时预览图 -->
+  <canvas class="canvas" id="canvas" type="webgl" canvas-id="webgl">
+    <image class="gpu" src="/images/test.jpg"></image>
+  </canvas>
+</view>
+

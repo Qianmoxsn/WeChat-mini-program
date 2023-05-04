@@ -1,0 +1,50 @@
+<!--pages/home/home.wxml-->
+<!-- index.wxml - 修改版 -->
+<view class="container">
+  <!-- 轮播图 -->
+  <view class="swiper-container">
+    <swiper class="banner" indicator-dots autoplay interval="5000">
+    <swiper-item>
+      <image src="/images/test.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/test.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/test.jpg"></image>
+    </swiper-item>
+  </swiper>
+  </view>
+  <!-- 顶部场景预览按钮 -->
+  <view class="preview-btn">
+    <image src="/images/icon/liststyle.png"></image>
+    <view>场景预览</view>
+  </view>
+  <!-- 模块列表 -->
+  <view class="module-list">
+    <navigator url="" class="module-item">
+      <image src="/images/icon/home.png"></image>
+      <view class="module-title">添加智能设备</view>
+    </navigator>
+    <navigator url="" class="module-item">
+      <image src="/images/icon/home.png"></image>
+      <view class="module-title">制冰机</view>
+    </navigator>
+    <navigator url="" class="module-item">
+      <image src="/images/icon/home.png"></image>
+      <view class="module-title">空调</view>
+    </navigator>
+    <navigator url="" class="module-item">
+      <image src="/images/icon/home.png"></image>
+      <view class="module-title">卧室灯</view>
+    </navigator>
+    <navigator url="" class="module-item">
+      <image src="/images/icon/home.png"></image>
+      <view class="module-title">电视</view>
+    </navigator>
+    <navigator url="" class="module-item">
+      <image src="/images/icon/home.png"></image>
+      <view class="module-title">更多</view>
+    </navigator>
+  </view>
+</view>
