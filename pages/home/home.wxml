@@ -22,27 +22,27 @@
   <!-- 模块列表 -->
   <view class="module-list">
     <navigator url="" class="module-item">
-      <image src="/images/icon/home.png"></image>
+      <image src="/images/instrument/增加添加加号.svg"></image>
       <view class="module-title">添加智能设备</view>
     </navigator>
     <navigator url="" class="module-item">
-      <image src="/images/icon/home.png"></image>
+      <image src="/images/instrument/图标-制冰机.svg"></image>
       <view class="module-title">制冰机</view>
     </navigator>
     <navigator url="" class="module-item">
-      <image src="/images/icon/home.png"></image>
+      <image src="/images/instrument/空调.svg"></image>
       <view class="module-title">空调</view>
     </navigator>
     <navigator url="" class="module-item">
-      <image src="/images/icon/home.png"></image>
+      <image src="/images/instrument/灯.svg"></image>
       <view class="module-title">卧室灯</view>
     </navigator>
     <navigator url="" class="module-item">
-      <image src="/images/icon/home.png"></image>
+      <image src="/images/instrument/电视,显示器,显示屏,电视机,液晶显示器.svg"></image>
       <view class="module-title">电视</view>
     </navigator>
     <navigator url="" class="module-item">
-      <image src="/images/icon/home.png"></image>
+      <image src="/images/instrument/更多.svg"></image>
       <view class="module-title">更多</view>
     </navigator>
   </view>
