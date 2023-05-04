@@ -1,5 +1,4 @@
 <!--pages/home/home.wxml-->
-<!-- index.wxml - 修改版 -->
 <view class="container">
   <!-- 轮播图 -->
   <view class="swiper-container">
