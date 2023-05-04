@@ -1,0 +1,44 @@
+<!--pages/air/air.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="back-btn"></view>
+    <text class="title">空调-详细设置</text>
+  </view>
+  <view class="icon-container">
+    <image class="icon" src="/images/icon/home.png"></image>
+    <view class="switch-container">
+      <button class="switch-btn on">开启手动模式</button>
+      <button class="switch-btn ai">开启AI模式</button>
+      <button class="switch-btn off">关闭</button>
+    </view>
+  </view>
+  <view class="menu">
+    <view class="menu-item">
+      <text class="menu-title">模式选择</text>
+      <view class="mode-select">
+        <text class="mode-item active">制冷</text>
+        <text class="mode-item">制热</text>
+        <text class="mode-item">除湿</text>
+      </view>
+    </view>
+    <view class="menu-item">
+      <text class="menu-title">温度</text>
+      <view class="temperature-select">
+        <text class="minus">-</text>
+        <text class="temperature-value">26</text>
+        <text class="plus">+</text>
+      </view>
+    </view>
+    <view class="menu-item">
+      <text class="menu-title">风速</text>
+      <view class="fan-speed-select">
+        <text class="fan-speed-item active">1</text>
+        <text class="fan-speed-item">2</text>
+        <text class="fan-speed-item">3</text>
+        <text class="fan-speed-item">4</text>
+        <text class="fan-speed-item">5</text>
+      </view>
+    </view>
+  </view>
+</view>
+
