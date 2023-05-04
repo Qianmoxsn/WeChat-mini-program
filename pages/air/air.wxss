@@ -15,7 +15,6 @@
 .back-btn {
   width: 88rpx;
   height: 88rpx;
-  background-image: url("../../images/back.png");
   background-size: cover;
 }
 
