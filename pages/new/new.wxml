@@ -22,7 +22,7 @@
 
   <!-- 实时预览图 -->
   <canvas class="canvas" id="canvas" type="webgl" canvas-id="webgl">
-    <image class="gpu" src="/images/test.jpg"></image>
+    <image class="gpu" src="/images/icon/OIP.jfif"></image>
   </canvas>
 </view>
 
