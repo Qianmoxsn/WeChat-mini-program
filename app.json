@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/new/new"
+    "pages/new/new",
+    "pages/air/air",
+    "pages/light/light"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -18,6 +20,16 @@
     },{
       "pagePath": "pages/new/new",
       "text": "场景预览",
+      "iconPath": "/images/icon/liststyle.png",
+      "selectedIconPath": "images/icon/liststyle-r.png"
+    },{
+      "pagePath": "pages/air/air",
+      "text": "空调",
+      "iconPath": "/images/icon/liststyle.png",
+      "selectedIconPath": "images/icon/liststyle-r.png"
+    },{
+      "pagePath": "pages/light/light",
+      "text": "卧室灯",
       "iconPath": "/images/icon/liststyle.png",
       "selectedIconPath": "images/icon/liststyle-r.png"
     }]
