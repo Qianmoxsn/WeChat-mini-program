@@ -4,13 +4,13 @@
   <view class="swiper-container">
     <swiper class="banner" indicator-dots autoplay interval="5000">
     <swiper-item>
-      <image src="/images/test.jpg"></image>
+      <image class="first" src="/images/icon/1.png" mode="aspectFit"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/test.jpg"></image>
+      <image class="first" src="/images/icon/2.png" mode="aspectFit"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/test.jpg"></image>
+      <image class="first" src="/images/icon/3.png" mode="aspectFit"></image>
     </swiper-item>
   </swiper>
   </view>
