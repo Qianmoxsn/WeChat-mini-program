@@ -1,66 +1,38 @@
 // pages/air/air.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
+    data: {},
 
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
+    onReady() {
+        wx.connectSocket({
+            url: 'ws://10.122.234.77:8080',
+            success: (result) => {
+                console.log(result);
+                wx.sendSocketMessage({
+                    data: '[C]You are connected with Wechat mini app',
+                })
+            }
+        })
+    },
+    onLoad() {
+        wx.onSocketMessage(function (evt) {
+            console.log(evt);
+            if (evt.data.slice(1, 2) === "T") {
+                let temp = evt.data.slice(3, 7);
+                // document.getElementById("temp").innerHTML = temp;
+                let hum = evt.data.slice(8, 10);
+                // document.getElementById("hum").innerHTML = hum;
+            } else if (evt.data.slice(1, 2) === "L" || evt.data.slice(1, 2) === "W") {
+                if (evt.data.slice(3, 7) == "5678") {
+                    // document.getElementById("btnon").style.backgroundColor = "#a9e089";
+                    // document.getElementById("btnoff").style.backgroundColor = "#f9f9f9";
+                } else if (evt.data.slice(3, 7) == "1234") {
+                    // document.getElementById("btnoff").style.backgroundColor = "#ff9d42";
+                    // document.getElementById("btnon").style.backgroundColor = "#f9f9f9";
+                }
+            }
+        })
+    },
+    onShow() {
+    },
 })
