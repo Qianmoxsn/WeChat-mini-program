@@ -7,9 +7,9 @@
   <view class="icon-container">
     <image class="icon" src="/images/instrument/空调.svg"></image>
     <view class="switch-container">
-      <button class="switch-btn on">开启手动模式</button>
+      <button class="switch-btn on" bindtap="acON">开启手动模式</button>
       <button class="switch-btn ai">开启AI模式</button>
-      <button class="switch-btn off">关闭</button>
+      <button class="switch-btn off" bindtap="acOFF">关闭</button>
     </view>
   </view>
   <view class="menu">

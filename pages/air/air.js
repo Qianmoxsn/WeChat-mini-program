@@ -4,15 +4,7 @@ Page({
     data: {},
 
     onReady() {
-        wx.connectSocket({
-            url: 'ws://10.122.234.77:8080',
-            success: (result) => {
-                console.log(result);
-                wx.sendSocketMessage({
-                    data: '[C]You are connected with Wechat mini app',
-                })
-            }
-        })
+
     },
     onLoad() {
         wx.onSocketMessage(function (evt) {
@@ -34,5 +26,15 @@ Page({
         })
     },
     onShow() {
+    },
+    acON() {
+        wx.sendSocketMessage({
+            data: "5678"
+        })
+    },
+    acOFF() {
+        wx.sendSocketMessage({
+            data: "1234"
+        })
     },
 })

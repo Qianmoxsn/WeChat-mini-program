@@ -12,6 +12,18 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+
+    //建立ws连接
+    wx.connectSocket({
+      url: 'ws://10.122.234.77:8080',
+      success: (result) => {
+        console.log(result);
+        wx.sendSocketMessage({
+          data: '[C]You are connected with Wechat mini app',
+        })
+      }
+    })
+
   },
   globalData: {
     userInfo: null
