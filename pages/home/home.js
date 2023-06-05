@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+     wx.hideTabBar();
   },
 
   /**
@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  handleButtonClick(event) {
+    const url = event.currentTarget.dataset.url;
+    wx.switchTab({
+      url
+    })
+  },
+  navigateBack: function () {
+    wx.switchTab({
+      url: '/pages/home/home' 
+    });
   }
 })

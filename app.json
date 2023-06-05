@@ -1,38 +1,50 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/new/new",
     "pages/air/air",
-    "pages/light/light"
+    "pages/light/light",
+    "pages/add/add"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "有容",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "/images/icon/home.png",
-      "selectedIconPath": "images/icon/home-r.png"
-    },{
-      "pagePath": "pages/new/new",
-      "text": "场景预览",
-      "iconPath": "/images/icon/liststyle.png",
-      "selectedIconPath": "images/icon/liststyle-r.png"
-    },{
-      "pagePath": "pages/air/air",
-      "text": "空调",
-      "iconPath": "/images/icon/liststyle.png",
-      "selectedIconPath": "images/icon/liststyle-r.png"
-    },{
-      "pagePath": "pages/light/light",
-      "text": "卧室灯",
-      "iconPath": "/images/icon/liststyle.png",
-      "selectedIconPath": "images/icon/liststyle-r.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/icon/home.png",
+        "selectedIconPath": "images/icon/home-r.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "场景预览",
+        "iconPath": "/images/icon/liststyle.png",
+        "selectedIconPath": "images/icon/liststyle-r.png"
+      },
+      {
+        "pagePath": "pages/air/air",
+        "text": "空调",
+        "iconPath": "/images/icon/liststyle.png",
+        "selectedIconPath": "images/icon/liststyle-r.png"
+      },
+      {
+        "pagePath": "pages/light/light",
+        "text": "卧室灯",
+        "iconPath": "/images/icon/liststyle.png",
+        "selectedIconPath": "images/icon/liststyle-r.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "添加",
+        "iconPath": "/images/icon/liststyle.png",
+        "selectedIconPath": "images/icon/liststyle-r.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

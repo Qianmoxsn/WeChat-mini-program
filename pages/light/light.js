@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  navigateBack: function () {
+    wx.switchTab({
+      url: '/pages/home/home' 
+    });
   }
 })

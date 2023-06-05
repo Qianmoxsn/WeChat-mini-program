@@ -37,4 +37,9 @@ Page({
             data: "1234"
         })
     },
+    navigateBack: function () {
+      wx.switchTab({
+        url: '/pages/home/home' 
+      });
+    }
 })

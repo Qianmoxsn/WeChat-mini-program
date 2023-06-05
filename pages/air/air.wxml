@@ -1,7 +1,9 @@
 <!--pages/air/air.wxml-->
 <view class="container">
   <view class="header">
-<!--    <view class="back-btn"></view>-->
+    <view class="back" bindtap="navigateBack">
+      <image class="back-icon" src="/images/icon/home.png"></image>
+    </view>
     <text class="title">空调-详细设置</text>
   </view>
   <view class="icon-container">

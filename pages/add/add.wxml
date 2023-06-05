@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="header">
+    <view class="back" bindtap="navigateBack">
+      <image class="back-icon" src="/images/icon/home.png"></image>
+    </view>
+    <text class="title">卧室灯-详细设置</text>
+  </view>
+    <picker mode="selector" range="{{deviceType}}" bindchange="bindPickerChange">
+        <view class="input-picker">
+            <text class="input-label">设备类型</text>
+            <text class="input-value">{{deviceType[selectedType]}}</text>
+        </view>
+    </picker>
+    <view class="input-wrapper">
+        <text class="input-label">输入 IP</text>
+        <input class="input-box" value="{{ipAddress}}" placeholder="请输入 IP 地址" bindinput="bindIPChange" />
+    </view>
+</view>
